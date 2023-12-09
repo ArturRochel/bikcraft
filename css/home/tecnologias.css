@@ -1,0 +1,84 @@
+@import "/css/utilidades/cores.css";
+
+.tecnologias-bg {
+  background-color: var(--c11);
+  box-shadow: inset 0 80px var(--w), inset 0 -80px var(--w);
+}
+
+.tecnologias {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.tecnologias-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
+}
+
+.tecnologias-texto {
+  padding-top: 160px;
+  padding-bottom: 160px;
+}
+
+/* Quando colocamos > isso quer dizer que é o span filho direto de .tecnologias-texto */
+.tecnologias-texto > span {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.tecnologias-texto h2 {
+  margin-bottom: 32px;
+}
+
+.tecnologias-texto > p {
+  margin-bottom: 20px;
+}
+
+.tecnologias-texto a {
+  margin-bottom: 80px;
+}
+
+.tecnologias-vant {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.tecnologias-vant img {
+  margin-bottom: 8px;
+  width: 24px;
+}
+
+.tecnologias-vant h3 {
+  margin-bottom: 8px;
+  width: max-content;
+}
+
+@media (max-width: 800px) {
+  .tecnologias {
+    grid-template-columns: 1fr;
+  }
+  .tecnologias-texto {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .tecnologias-texto a {
+    margin-bottom: 60px;
+  }
+  .tecnologias-bg {
+    box-shadow: none;
+  }
+  .tecnologias-img {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .tecnologias-vant {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
