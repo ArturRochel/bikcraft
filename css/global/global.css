@@ -4,11 +4,12 @@ body {
 }
 
 h1,
-h1,
+h2,
 h3,
 p,
 h4,
-blockquote {
+blockquote,
+dd {
   margin: 0px;
   padding: 0px;
 }
