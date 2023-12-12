@@ -6,6 +6,7 @@
 
 /* CSS UTILITÁRIO */
 @import "./utilidades/componentes.css";
+@import "./utilidades/formulario.css";
 
 /* PÁGINA HOME */
 @import "./home/introducao.css";
@@ -19,6 +20,7 @@
 
 /* PÁGINAS INTERNAS */
 @import "./interna/interna.css";
+@import "./bicicletas/seguro.css";
 
 /* PÁGINA DE TERMOS */
 @import "./termos/termos.css";
@@ -27,3 +29,10 @@
 @import "./seguros/seguros.css";
 @import "./seguros/vantagens.css";
 @import "./seguros/perguntas.css";
+
+/* PÁGINA DE CONTATO */
+@import "./contato/contato.css";
+@import "./contato/lojas.css";
+
+/* PÁGINA DE ORÇAMENTOS */
+@import "./orcamento/orcamento.css";

@@ -18,6 +18,21 @@
   overflow-x: auto;
 }
 
+#nimbus .bicicletas-img ul {
+  grid-template-columns: 1fr 1fr;
+  padding: 0px 0px 0px 0px;
+}
+
+#magic .bicicletas-img ul {
+  grid-template-columns: 1fr 1fr;
+  padding: 0px 0px 0px 0px;
+}
+
+#nebula .bicicletas-img ul {
+  grid-template-columns: 1fr 1fr;
+  padding: 0px 0px 0px 0px;
+}
+
 .bicicletas-img li {
   min-width: 280px;
 }

@@ -1,0 +1,44 @@
+.seguro-bg {
+  background-color: var(--c11);
+  box-shadow: inset 0 120px var(--w), inset 0 -120px var(--c12);
+  padding-bottom: 20px;
+}
+
+.seguro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.seguro-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.seguro-texto {
+  padding-top: 180px;
+  padding-bottom: 80px;
+}
+
+.seguro-texto h2 {
+  margin-bottom: 32px;
+}
+
+.seguro-texto p {
+  margin-bottom: 32px;
+}
+
+@media (max-width: 800px) {
+  .seguro-bg {
+    box-shadow: none;
+    padding-bottom: 0px;
+  }
+  .seguro {
+    grid-template-columns: 1fr;
+  }
+  .seguro-texto {
+    padding-top: 40px;
+    padding-bottom: 0px;
+  }
+}
