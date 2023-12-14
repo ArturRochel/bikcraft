@@ -1,3 +1,4 @@
+// HEADER INTERATIVO
 const links = document.querySelectorAll(".header-menu a");
 
 function ativarLink(link) {
@@ -9,3 +10,13 @@ function ativarLink(link) {
 }
 
 links.forEach(ativarLink);
+
+//ORCAMENTOS
+const parametros = new URLSearchParams(location.search);
+
+function itens(parametro) {
+  const elemento = document.getElementById(parametro);
+  elemento.checked = true;
+}
+
+parametros.forEach(itens);
