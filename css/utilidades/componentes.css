@@ -102,3 +102,23 @@
     font-weight: 400;
   }
 }
+
+.whatsapp {
+  position: fixed;
+  z-index: 999;
+  width: 20px;
+  height: 20px;
+  bottom: 80px;
+  right: 80px;
+}
+
+.whatsapp i {
+  font-size: 50px;
+  color: #2da33b;
+  transition: 0.2s;
+}
+
+.whatsapp i:hover {
+  transform: scale(1.05);
+  color: black;
+}

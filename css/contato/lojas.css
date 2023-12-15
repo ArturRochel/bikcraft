@@ -69,3 +69,13 @@
   left: -20px;
   top: -2px;
 }
+
+@media (max-width: 800px) {
+  .lojas-mapas {
+    grid-template-columns: 1fr;
+  }
+  .loja-info h3,
+  .loja-info ul {
+    margin-bottom: 12px;
+  }
+}
