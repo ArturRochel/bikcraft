@@ -1,5 +1,3 @@
-@import "../utilidades/cores.css";
-
 .header-bg {
   background-color: var(--c12);
 }
@@ -115,7 +113,7 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
   body {
     position: relative;
   }
