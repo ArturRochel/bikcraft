@@ -15,8 +15,8 @@ links.forEach(marcador);
 const parametros = new URLSearchParams(location.search);
 
 function tipo(item) {
+  const elemento = document.getElementById(item);
   if (elemento) {
-    const elemento = document.getElementById(item);
     elemento.checked = true;
   }
 }
