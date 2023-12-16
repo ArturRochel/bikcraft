@@ -46,7 +46,7 @@
   margin-top: 6px;
 }
 
-.header a:hover:after {
+.header a:hover::after {
   width: 100%;
   transition: 0.3s;
 }

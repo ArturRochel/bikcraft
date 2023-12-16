@@ -10,6 +10,27 @@
   padding-bottom: 60px;
 }
 
+.logo a {
+  display: block;
+  position: relative;
+  width: max-content;
+}
+
+.logo a::after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 3px;
+  background-color: var(--w);
+  margin-top: 6px;
+}
+
+.logo a:hover::after {
+  transition: 0.3s;
+  width: 100%;
+}
+
 .footer h3 {
   margin-bottom: 32px;
 }

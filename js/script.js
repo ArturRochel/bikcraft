@@ -10,6 +10,7 @@ function marcador(link) {
 }
 
 links.forEach(marcador);
+
 //ORCAMENTOS
 const parametros = new URLSearchParams(location.search);
 

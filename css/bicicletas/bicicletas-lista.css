@@ -39,6 +39,7 @@
 
 .bicicletas-img li span {
   padding-left: 20px;
+  transition: 0.2s;
 }
 
 .bicicletas-img a {
@@ -69,8 +70,8 @@
   width: 24px;
 }
 
-.bicicletas-img li span {
-  padding-left: 20px;
+.bicicletas-img a:hover span {
+  color: var(--c12);
 }
 
 @media (max-width: 800px) {
