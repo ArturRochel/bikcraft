@@ -15,8 +15,10 @@ links.forEach(marcador);
 const parametros = new URLSearchParams(location.search);
 
 function tipo(item) {
-  const elemento = document.getElementById(item);
-  elemento.checked = true;
+  if (elemento) {
+    const elemento = document.getElementById(item);
+    elemento.checked = true;
+  }
 }
 
 parametros.forEach(tipo);
@@ -42,3 +44,22 @@ function abrir() {
 }
 
 hamburguer.addEventListener("click", abrir);
+
+// PERGUNTAS FREQUENTES -SEGUROS
+const perguntas = document.querySelectorAll(".perguntas button");
+
+function responder(event) {
+  const pergunta = event.currentTarget;
+  const controls = pergunta.getAttribute("aria-controls");
+  const resposta = document.querySelector("#" + controls);
+
+  resposta.classList.toggle("ativa");
+  const ativo = resposta.classList.contains("ativa");
+  pergunta.setAttribute("aria-expanded", ativo);
+}
+
+function clickPerguntas(pergunta) {
+  pergunta.addEventListener("click", responder);
+}
+
+perguntas.forEach(clickPerguntas);
