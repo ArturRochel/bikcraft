@@ -63,3 +63,21 @@ function clickPerguntas(pergunta) {
 }
 
 perguntas.forEach(clickPerguntas);
+
+// GALERIA NIMBUS
+const imagens = document.querySelectorAll(".nimbus-imagens img");
+const galeria = document.querySelector(".nimbus-imagens");
+
+function mudar(event) {
+  const imagem = event.currentTarget;
+  const media = matchMedia("(min-width: 900px)").matches;
+  if (media) {
+    galeria.prepend(imagem);
+  }
+}
+
+function clickImg(imagem) {
+  imagem.addEventListener("click", mudar);
+}
+
+imagens.forEach(clickImg);
