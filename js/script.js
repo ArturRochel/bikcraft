@@ -81,3 +81,9 @@ function clickImg(imagem) {
 }
 
 imagens.forEach(clickImg);
+
+// ANIMAÇÃO
+
+if (window.SimpleAnime) {
+  new SimpleAnime();
+}
