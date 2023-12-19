@@ -67,6 +67,10 @@
   margin-top: 40px;
 }
 
+.footer-copy:nth-child(odd) {
+  margin-top: 0px;
+}
+
 @media (max-width: 800px) {
   .footer > img {
     display: none;
