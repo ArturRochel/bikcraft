@@ -39,7 +39,7 @@
 
 .bicicletas-img li span {
   padding-left: 20px;
-  transition: 0.2s;
+  transition: transform 0.2s;
 }
 
 .bicicletas-img a {
@@ -70,7 +70,7 @@
   width: 24px;
 }
 
-.bicicletas-img a:hover span {
+.bicicletas-img a:hover li span {
   color: var(--c12);
   transform: scale(1.05);
 }
