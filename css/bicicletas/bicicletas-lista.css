@@ -70,7 +70,7 @@
   width: 24px;
 }
 
-.bicicletas-img a:hover li span {
+.bicicletas-img a:hover span {
   color: var(--c12);
   transform: scale(1.05);
 }
