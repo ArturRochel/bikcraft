@@ -71,7 +71,7 @@
 }
 
 .bicicletas-img a:hover span {
-  transform: scale3d(1.05);
+  transform: scale(1.05);
   color: var(--c12);
 }
 

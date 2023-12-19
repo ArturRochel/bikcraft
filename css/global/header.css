@@ -36,21 +36,13 @@
   position: relative;
 }
 
-.header a::after {
-  position: absolute;
-  content: "";
-  display: block;
-  width: 0%;
-  height: 3px;
-  background-color: var(--w);
-  margin-top: 6px;
-}
-
-.header a:hover::after {
-  width: 100%;
+.header img {
   transition: 0.3s;
 }
 
+.header img:hover {
+  transform: scale(1.05);
+}
 .header-menu {
   display: flex;
   flex-wrap: wrap;
@@ -71,6 +63,7 @@
   height: 3px;
   background-color: var(--w);
   margin-top: 4px;
+  transition: 0.3s;
 }
 
 .header-menu a:hover::after {
@@ -114,9 +107,6 @@
 }
 
 @media (max-width: 600px) {
-  body {
-    position: relative;
-  }
   .header-menu {
     visibility: hidden;
     position: absolute;
@@ -126,7 +116,6 @@
     top: 96px;
     right: 0px;
     height: 100vh;
-    /* padding: 20px; */
     width: 0%;
     transition: 0.3s;
     overflow: hidden;
