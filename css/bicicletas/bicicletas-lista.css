@@ -72,6 +72,7 @@
 
 .bicicletas-img a:hover span {
   color: var(--c12);
+  transform: scale(1.05);
 }
 
 @media (max-width: 800px) {
